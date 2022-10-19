@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./index.css">
+    <title>Blogr</title>
+    <script src="./code.js"></script>
+  </head>
+  <body>
+    <header>
+      <img class="intro-desktop" id="intro-img-header" src="./images/bg-pattern-intro-desktop.svg" alt="">
+      <nav class="nav-desktop">
+          <img class="logo" src="./images/logo.svg" alt="Logo">
+          
+          <ul>
+            <li class="PCC" >
+              <span onmouseover="Nav_MENU_Show(1)">Product</span> 
+              <img id="arrow-Connect-1" src="./images/icon-arrow-light.svg" alt="Arrow">
+              <div class="CNL" id="CNL-1" onmouseover="Nav_MENU_Show(1)" onmouseout="Nav_MENU_Hide(1)">
+                <span>Overview</span>
+                <span>Pricing</span>
+                <span>Marketplace</span>
+                <span>Features</span>
+                <span>Integrations</span>
+              </div>
+            </li>
+            
+            <li class="PCC" >
+              <span onmouseover="Nav_MENU_Show(2)">Company</span> 
+              <img id="arrow-Connect-2" src="./images/icon-arrow-light.svg" alt="Arrow">
+              <div class="CNL" id="CNL-2" onmouseover="Nav_MENU_Show(2)" onmouseout="Nav_MENU_Hide(2)">
+                <span>About</span>
+                <span>Team</span>
+                <span>Blog</span>
+                <span>Careers</span>
+              </div>
+            </li>
+
+            <li class="PCC">
+              <span onmouseover="Nav_MENU_Show(3)">Connect</span> 
+              <img id="arrow-Connect-3" src="./images/icon-arrow-light.svg" alt="Arrow">
+              <div class="CNL" id="CNL-3" onmouseover="Nav_MENU_Show(3)" onmouseout="Nav_MENU_Hide(3)">
+                <span>Contact</span>
+                <span>Newsletter</span>
+                <span>Linkedin</span>
+              </div>
+            </li>
+          </ul>
+        
+          <div class="Login-Signup">
+            <button class="Login">Login</button>
+            <button class="Signup">Sign Up</button>
+          </div>
+
+      </nav>
+
+      <nav class="nav-mobile">
+        <div class="logo-bars">
+          <img src="./images/logo.svg" alt="Logo">
+          <img id="icon-hamburger" src="./images/icon-hamburger.svg" alt="Icon" onclick="Change_bars_X()">
+        </div>
+      </nav>
+      
+      <div class="header-desc">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div> 
+          <button class="SFF">Start for Free</button>
+          <button class="LM">Learn More</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-content" id="nav-content">
+
+      <div class="nav-content-item">
+        <div class="title-img" onclick=" Nav_MENU_Show_mobile(1) ">
+          <span>Product</span>
+          <img id="arrow-dark-1" src="./images/icon-arrow-dark.svg" alt="arrow-dark">
+        </div>
+
+      <ul id="nav-content-item-1">
+        <li>Overview</li>
+        <li>Pricing</li>
+        <li>Marketplace</li>
+        <li>Features</li>
+        <li>Integrations</li>
+      </ul>
+      </div>
+
+      <div class="nav-content-item">
+        <div class="title-img" onclick="Nav_MENU_Show_mobile(2)">
+          <span>Company</span>
+          <img id="arrow-dark-2" src="./images/icon-arrow-dark.svg" alt="arrow-dark">
+        </div>
+
+      <ul id="nav-content-item-2">
+        <li>About</li>
+        <li>Team</li>
+        <li>Blog</li>
+        <li>Careers</li>
+      </ul>
+      </div>
+
+      <div class="nav-content-item">
+        <div class="title-img" onclick="Nav_MENU_Show_mobile(3)">
+          <span>Connect</span>
+          <img id="arrow-dark-3" src="./images/icon-arrow-dark.svg" alt="arrow-dark">
+        </div>
+
+        <ul id="nav-content-item-3">
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="nav-content-btns">
+        <button class="btn1">Login</button>
+        <button class="btn2">Sign Up</button>
+      </div>
+    </div>
+
+
+    <main>
+      
+      <div class="DFF">
+        <h1 class="DFF-title">Designed for the future</h1>
+        <div class="DFF-text-img">
+          
+          <div class="DFF-text">
+
+            <div class="DFF-text-1">
+              <h1>Intoducing an extensible editor</h1>
+              <p>
+                Blogr features an exeedingly intuitive interface wich lets you focus
+                on one thing: creating content. The editor supports management of 
+                multiple blogs and allows easy manipulation of embeds such as images,
+                videos, and Markdown. Extensibility with plugins and themes provide 
+                easy ways to add functionality or change the looks of a blog.
+              </p>
+            </div>
+
+            <div class="DFF-text-2">
+              <h1>Robust content management</h1>
+              <p>
+                Flexible content management enables users to easily move through posts.
+                Increase the usability of your blog by adding customized categories, sections, formats,
+                or flow, With this functionality, you're in full control.
+              </p>
+            </div>
+          
+          </div>
+
+          <img class="DFF-img" id="illustration-editor" src="./images/illustration-editor-desktop.svg" alt="editor-desktop">
+        </div>
+      </div>
+
+      <div class="SAI">
+        <div class="SAI-img">
+          <img class="SAI-img1" src="./images/illustration-phones.svg" alt="illustration-phones">
+          <div class="SAI-img2">
+            <img  src="./images/bg-pattern-circles.svg" alt="illustration-phones">
+          </div>
+      </div>
+        
+        <div class="SAI-text">
+          <h1>State of the Art Infrastructure</h1>
+          <p>
+            With reliability and speed in mind. worldwide data centers provide the
+            backbone for ultra-fast connectivity. This ensures your site will load
+            instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      </div>
+
+      <div class="FOSP">
+        <div class="FOSP-img">
+          <img id="illustration-laptop" src="./images/illustration-laptop-desktop.svg" alt="laptop-desktop">
+        </div>
+        <div class="FOSP-txt">
+          <div class="FOSP-txt-1">
+            <h1>Free, open, simple</h1>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developres. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration, third-party
+              commenting tools, and works seamlessly with Google Analytics. The
+              architecture is clean and is relatively easy to learn.
+            </p>
+          </div>
+
+          <div class="FOSP-txt-2">
+            <h1>Powerful tooling</h1>
+            <p>
+              Batteries included, We built a simple and straightforward CLI tool that
+              makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    
+    <footer>
+      
+      <img class="footer-logo" src="./images/logo.svg" alt="Logo">
+      
+      <div class="footer-item">
+        <p>Product</p>
+        <ul>
+          <li>Overview</li>
+          <li>Pricing</li>
+          <li>Marketplace</li>
+          <li>Features</li>
+          <li>Integrations</li>
+        </ul>
+      </div>
+
+      <div class="footer-item">
+        <p>Company</p>
+        <ul>
+          <li>About</li>
+          <li>Team</li>
+          <li>Blog</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+
+      <div class="footer-item">
+        <p>Connect</p>
+        <ul>
+          <li>Contact</li>
+          <li>Newsletter</li>
+          <li>Linkedin</li>
+        </ul>
+      </div>
+
+    </footer>
+
+    <script>
+      var x = window.matchMedia("(max-width: 675px)")
+      Mobile_view(x) // Call listener function at run time
+      x.addListener(Mobile_view) // Attach listener function on state changes
+
+      var y = window.matchMedia("(min-width: 675px)")
+      Desktop_view(y) // Call listener function at run time
+      y.addListener(Desktop_view) // Attach listener function on state changes
+    </script>
+  </body>
+</html>
